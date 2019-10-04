@@ -165,11 +165,12 @@ CFourVector CFourVector::operator - () const {
 }
 
 std::ostream & operator << (std::ostream& out, const CFourVector& v) {
-  out << "(" <<
-      v.x_[0] << ", " <<
-      v.x_[1] << ", " <<
-      v.x_[2] << ", " <<
-      v.x_[3] << ")";
+  return
+    out << "(" <<
+    v.x_[0] << ", " <<
+    v.x_[1] << ", " <<
+    v.x_[2] << ", " <<
+    v.x_[3] << ")";
 }
 
 double CFourVector::getCosTheta() const {
