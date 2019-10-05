@@ -1,4 +1,3 @@
-
 #include <algorithm>
 #include <numeric>
 #include <cmath>
@@ -241,7 +240,7 @@ double phase_space_weight(
   koeff /= TMath::Gamma(1.5 * (momenta.size() - 1));
   koeff *= pow(t_n, 1.5 * momenta.size() - 2.5) / m_n;
   int n = momenta.size() - 1;
-  for (int i = 0; i < n; ++i) {
+  for (int i = n; i > 0; --i) {
     p_m = p_n - momenta[i];
     mu_m = mu_n - masses[i];
     m_m = sqrt(p_m.getM2().real());
