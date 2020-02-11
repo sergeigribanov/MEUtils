@@ -1,8 +1,8 @@
 #include <algorithm>
 #include <numeric>
 #include <cmath>
-#include "TMath.h"
-#include "CFourVector.h"
+#include <TMath.h>
+#include "CFourVector.hpp"
 
 cdouble CFourVector::permutation_parity(
       const std::string::const_iterator& itBegin,

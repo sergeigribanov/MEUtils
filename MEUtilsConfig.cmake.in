@@ -1,0 +1,6 @@
+@PACKAGE_INIT@
+
+include ("${CMAKE_CURRENT_LIST_DIR}/MEUtilsTargets.cmake" )
+set(MEUtils_ROOT_DIR @CMAKE_INSTALL_PREFIX@)
+set(MEUtils_INCLUDE_DIRS ${MEUtils_ROOT_DIR}/include)
+set(MEUtils_LIBRARIES ${MEUtils_ROOT_DIR}/lib/libMEUtils.so)

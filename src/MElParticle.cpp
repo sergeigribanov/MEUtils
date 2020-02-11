@@ -1,5 +1,5 @@
 #include <TDatabasePDG.h>
-#include "MElParticle.h"
+#include "MElParticle.hpp"
 
 MElParticle::MElParticle(int particleId):
   mass_(TDatabasePDG::Instance()->GetParticle(particleId)->Mass()),
