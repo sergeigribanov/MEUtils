@@ -1,3 +1,4 @@
+#include <cmath>
 #include <TDatabasePDG.h>
 #include "MElParticle.hpp"
 
@@ -51,5 +52,6 @@ double MElParticle::getWidth(double s, double* params) const {
 std::complex<double> MElParticle::getPropagator(
     const double& q2, double* params) const {
   return 1. / (q2 - mass_ * mass_ + std::complex<double>(0, 1) *
+	       std::sqrt(q2) * 
                getWidth(q2, params));
 }
