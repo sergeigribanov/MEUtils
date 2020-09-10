@@ -72,7 +72,7 @@ CFourVector::CFourVector(const double* array) {
 }
 
 CFourVector::CFourVector(cdouble x, cdouble y, cdouble z, cdouble t):
-    x_({x, y, z, t}) {
+    x_{x, y, z, t} {
 }
 
 CFourVector::CFourVector(const TLorentzVector& lvec) {
